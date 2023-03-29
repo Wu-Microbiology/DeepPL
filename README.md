@@ -1,4 +1,3 @@
-"""
 This repository includes the implementation of 'DeepPL ....'. Please cite our paper if you use the models or codes. The repo is still actively under development, so please kindly report if there is any issue encountered.
 
 In this repository, we provides batch scripts to prepare training data. The scripts convert genome fasta files to kmer6 tsv files used for model training.
