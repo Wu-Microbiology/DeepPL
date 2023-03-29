@@ -1,11 +1,10 @@
-This repository includes the implementation of 'DeepPL ....'. Please cite our paper if you use the models or codes. The repo is still actively under development, so please kindly report if there is any issue encountered.
+This repository includes the implementation of 'DeepPL ....'. Please cite our paper if you use our model or code. The repo is still actively under development, please let us know if you encounter and issues.
 
 In this repository, we provide batch scripts to prepare training data for model training, including a script to check genome fasta files, a script to convert genome fasta files to kmer6 tsv files, and a script to process test results.
  
 We also provide a prediction script predict_lyso_vs_lytic.py which takes a phage complete genome fasta file as input, produces a classification result on whether the input is a lysogenic or lytic phage.
 
-Citation
-If you have used DeepPL in your research, please kindly cite the following publication:
+Citation. If you have used DeepPL in your research, please kindly cite the following publication:
 "......."
 
 
