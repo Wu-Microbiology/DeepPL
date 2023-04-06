@@ -16,7 +16,7 @@ Please follow the instructions at https://github.com/jerryji1993/DNABERT to inst
 
 2. Model download
 
-Our lysogenic vs. lytic phage classification model can be downloaded at ....
+Our lysogenic vs. lytic phage classification model can be downloaded at https://drive.google.com/file/d/1PzQOi8QQDV6IBOBya-3I5zj1UFj4RA1S/view?usp=sharing
 
 3. To run prediction
 

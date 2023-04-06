@@ -59,7 +59,7 @@ with open(tmp_dir + "/dev.tsv", "w") as f:
     f.write("sequence\tlabel\n")
     while n + seq_len < len(dna):
         kmers = seq2kmer(dna[n:n+seq_len], k)
-        f.write("{}\t{}\n".format(kmers, c % 2))
+        f.write("{}\t{}\n".format(kmers, int(c==0)))
         n += step
         c += 1
 
