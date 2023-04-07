@@ -18,7 +18,6 @@ def seq2kmer(seq, k):
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--dnabert_path', type=str, required=True)
 parser.add_argument('--model_path', type=str, required=True)
 parser.add_argument('--fasta_file', type=str, required=True)
 
@@ -63,7 +62,7 @@ with open(tmp_dir + "/dev.tsv", "w") as f:
         n += step
         c += 1
 
-run_finetune_command = "python {} --model_type dna --tokenizer_name=dna6 --model_name_or_path {} --task_name dnaprom --do_predict --data_dir {} --max_seq_length 100 --per_gpu_pred_batch_size=32 --output_dir {} --predict_dir {} --n_process 48".format(args.dnabert_path + "/examples/run_finetune.py", args.model_path, tmp_dir, args.model_path, tmp_dir)
+run_finetune_command = "python ./run_finetune.py --model_type dna --tokenizer_name=dna6 --model_name_or_path {} --task_name dnaprom --do_predict --data_dir {} --max_seq_length 100 --per_gpu_pred_batch_size=32 --output_dir {} --predict_dir {} --n_process 48".format(args.model_path, tmp_dir, args.model_path, tmp_dir)
 
 print ("")
 print (run_finetune_command)
@@ -85,8 +84,8 @@ s = 0
 e = r.shape[0]
 p = np.sum(((r[s:e]))>thresh1)/(e-s)
 if p >= thresh2:
-    out = "Predict:Lysogenic"
+    out = "Predict: Lysogenic"
 else:
-    out = "Predict:Lytic"
+    out = "Predict: Lytic"
 
 print (p, out)
