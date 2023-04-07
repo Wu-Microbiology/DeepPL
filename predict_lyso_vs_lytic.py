@@ -78,7 +78,7 @@ thresh2 = 0.016
 
 dict1 = {}
 dict2 = {}
-print ("threshold1:", thresh1, "threshold2:", thresh2)
+print ("\nDeepPL threshold1:", thresh1, "threshold2:", thresh2)
 
 s = 0
 e = r.shape[0]
@@ -88,4 +88,5 @@ if p >= thresh2:
 else:
     out = "Predict: Lytic"
 
+print (args.fasta_file)
 print (p, out)
