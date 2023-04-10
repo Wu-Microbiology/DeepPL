@@ -1,3 +1,6 @@
+
+![AI-Figure 1-04-07-2023](https://user-images.githubusercontent.com/124622531/230945786-7a3372ae-d8fd-471a-a3bf-785f89d396c4.jpg)
+
 This repository includes the implementation of 'DeepPL ....'. Please cite our paper if you use our model or code. The repo is still actively under development, please let us know if you encounter and issues.
 
 In this repository, we provide batch scripts to prepare training data for model training, including a script to check genome fasta files, a script to convert genome fasta files to kmer6 tsv files, and a script to process test results.
