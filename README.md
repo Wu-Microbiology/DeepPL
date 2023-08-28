@@ -34,5 +34,5 @@ tar -xvf deeppl_ckpt-340000.tar
 conda activate dnabert
 ```
 cd DeepPL
-python predict_lyso_vs_lytic.py --model_path path_to_the_downloaded_model_directory --fasta_file input_phage_complete_genome.
+python predict_lyso_vs_lytic.py --model_path path_to_the_downloaded_model_directory --fasta_file input_phage_complete_genome
 ```
