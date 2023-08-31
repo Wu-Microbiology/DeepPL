@@ -22,6 +22,8 @@ Please follow the instructions at https://github.com/jerryji1993/DNABERT to inst
 Our lysogenic vs. lytic phage classification model can be directly downloaded at google drive (https://drive.google.com/file/d/1PzQOi8QQDV6IBOBya-3I5zj1UFj4RA1S/view?usp=sharing). You also can use curl in the commandline to download the files from Google Drive as below 
 
 ```
+git clone https://github.com/Wu-Microbiology/DeepPL
+cd DeepPL
 fileid="1PzQOi8QQDV6IBOBya-3I5zj1UFj4RA1S"
 filename="deeppl_ckpt-340000.tar"
 curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=${fileid}" > /dev/null
