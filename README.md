@@ -1,5 +1,6 @@
 
-![AI-Figure 1-04-07-2023](https://user-images.githubusercontent.com/124622531/230945786-7a3372ae-d8fd-471a-a3bf-785f89d396c4.jpg)
+![AI-Figure 1-04-07-2023]([https://user-images.githubusercontent.com/124622531/230945786-7a3372ae-d8fd-471a-a3bf-785f89d396c4.jpg]
+![DeepPL Overview](https://github.com/Wu-Microbiology/DeepPL/blob/main/DeepPL%20Overview.tiff)
 
 This repository includes the implementation of 'DeepPL: a deep-learning-based tool for the prediction of bacteriophage lifecycle'. Please cite our paper if you use our model or code. The repo is still actively under development, please let us know if you encounter and issues.
 
