@@ -9,8 +9,9 @@ In this repository, we provide batch scripts to prepare training data for model 
 We also provide a prediction script predict_lyso_vs_lytic.py which takes a phage complete genome fasta file as input, produces a classification result on whether the input is a lysogenic or lytic phage.
 
 Citation. If you have used DeepPL in your research, please kindly cite the following publication:
+```
 "Zhang Y, Mao M, Zhang R, Liao Y-T, Wu VCH (2024) DeepPL: A deep-learning-based tool for the prediction of bacteriophage lifecycle. PLoS Comput Biol 20(10): e1012525. https://doi.org/10.1371/journal.pcbi.1012525"
-
+```
 
 1. Environment setup
 
