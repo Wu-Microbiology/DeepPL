@@ -25,7 +25,7 @@ conda env create -f deeppl-linux.yml --prefix path_to_conda_environment/deeppl
 
 2. Model download
 
-Our lysogenic vs. lytic phage classification model can be directly downloaded at google drive (https://drive.google.com/file/d/1PzQOi8QQDV6IBOBya-3I5zj1UFj4RA1S/view?usp=sharing) or figshare (https://figshare.com/articles/software/DeepPL_model/27005053?file=49153420). You also can use curl in the commandline to download the files from Google Drive as below 
+Our lysogenic vs. lytic phage classification model can be directly downloaded at google drive (https://drive.google.com/file/d/1PzQOi8QQDV6IBOBya-3I5zj1UFj4RA1S/view?usp=sharing) or figshare (https://figshare.com/articles/software/DeepPL_model/27005053?file=49153420).
 
 
 3. To run prediction
