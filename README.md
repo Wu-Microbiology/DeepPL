@@ -19,23 +19,18 @@ We used DNABERT which is build on top of huggingface transformer code to train o
 
 Please follow the instructions at https://github.com/jerryji1993/DNABERT to install DNABERT and setup the dnabert conda environment.
 
+```
+conda env create -f deeppl-linux.yml --prefix path_to_conda_environment/deeppl
+```
+
 2. Model download
 
 Our lysogenic vs. lytic phage classification model can be directly downloaded at google drive (https://drive.google.com/file/d/1PzQOi8QQDV6IBOBya-3I5zj1UFj4RA1S/view?usp=sharing) or figshare (https://figshare.com/articles/software/DeepPL_model/27005053?file=49153420). You also can use curl in the commandline to download the files from Google Drive as below 
 
-```
-git clone https://github.com/Wu-Microbiology/DeepPL
-cd DeepPL
-fileid="1PzQOi8QQDV6IBOBya-3I5zj1UFj4RA1S"
-filename="deeppl_ckpt-340000.tar"
-curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=${fileid}" > /dev/null
-curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=${fileid}" -o ${filename}
-tar -xvf deeppl_ckpt-340000.tar
-```
 
 3. To run prediction
 ```
-conda activate dnabert
+conda activate deeppl
 cd DeepPL
 python predict_lyso_vs_lytic.py --model_path path_to_the_downloaded_model_directory --fasta_file input_phage_complete_genome
 ```
