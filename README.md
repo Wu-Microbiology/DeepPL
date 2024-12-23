@@ -17,7 +17,7 @@ Citation. If you have used DeepPL in your research, please kindly cite the follo
 
 We used DNABERT which is build on top of huggingface transformer code to train out DeepPL model. The prediction script also needs the DNABERT conda environment to run.
 
-Please follow the instructions at https://github.com/jerryji1993/DNABERT to install DNABERT and setup the dnabert conda environment. Or you can also create and activate a conda environment via below command line
+Please follow the instructions at https://github.com/jerryji1993/DNABERT to install DNABERT and setup the dnabert conda environment. Or you can also create and activate a conda environment as below
 
 ```
 cd DeepPL
