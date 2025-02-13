@@ -20,8 +20,20 @@ We used DNABERT which is build on top of huggingface transformer code to train o
 Please follow the instructions at https://github.com/jerryji1993/DNABERT to install DNABERT and setup the dnabert conda environment. Or you can also create and activate a conda environment as below
 
 ```
-cd DeepPL
-conda env create -f deeppl-linux.yml --prefix path_to_conda_environment/deeppl
+conda create --name deeppl python=3.9
+conda activate deeppl
+conda install transformers
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+git clone https://github.com/jerryji1993/DNABERT.git
+cd DNABERT
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+python3 -m pip install --editable .
+conda install -c conda-forge sentencepiece
+cd examples
+python3 -m pip install -r requirements.txt
+conda install sentencepiece
+conda install scikit-learn
+conda install tensorboardx
 ```
 
 2. Model download
