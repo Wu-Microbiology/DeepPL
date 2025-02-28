@@ -42,6 +42,7 @@ Our lysogenic vs. lytic phage classification model can be directly downloaded at
 
 
 3. To run prediction
+
 Single fasta file
 ```
 cd DeepPL
