@@ -42,8 +42,15 @@ Our lysogenic vs. lytic phage classification model can be directly downloaded at
 
 
 3. To run prediction
+Single fasta file
 ```
 cd DeepPL
 conda activate deeppl
 python predict_lyso_vs_lytic.py --model_path path_to_the_downloaded_model_directory --fasta_file input_phage_complete_genome
+```
+Multi fasta files
+```
+cd DeepPL
+conda activate deeppl
+python mutilpredict_lyso_vs_lytic.py --model_path path_to_the_downloaded_model_directory --fasta_folder path_to_the_directory_of_multi_phage_complete_genomes --output_csv results.csv
 ```
